@@ -16,16 +16,16 @@ def livestream():
           
           ret,img=cap.read()
           
-          #cv2.imshow(viewwindow,img)
+          cv2.imshow(viewwindow,img)
           print ("DETECTING PLATE . . .")
-          tkinter.Image(viewwindow,cv2.imwrite(img)).grid(row=1,column=0)
+          #tkinter.Image(viewwindow,cv2.imwrite(img)).grid(row=1,column=0)
          
           if cv2.waitKey(1)==27:
              break;
     cv2.destroyAllWindows()
     cap.release()
 
-#root menu initialised
+#root menu initialised to understand
 
 root_menu=tkinter.Menu(viewwindow)
 viewwindow.config(menu=root_menu)

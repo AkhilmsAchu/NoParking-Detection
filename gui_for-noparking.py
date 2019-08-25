@@ -3,7 +3,7 @@ from PIL import Image,ImageTk
 import cv2
 import numpy as np
 
-
+#partially working progm
 
 def livestream():
     
